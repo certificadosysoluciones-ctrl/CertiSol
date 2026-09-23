@@ -1,5 +1,55 @@
 <!doctype html>
-<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CertiSol · Certificados sin complicaciones</title><meta name="description" content="Calcula un presupuesto orientativo para tu certificado energético y prepara tu solicitud de asesoramiento técnico."><link rel="icon" href="favicon.svg"><link rel="stylesheet" href="style.css"><script src="config.js" defer></script><script src="pricing.js" defer></script><script src="app.js" defer></script></head>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CertiSol · Certificados sin complicaciones</title><meta name="description" content="Calcula un presupuesto orientativo para tu certificado energético y prepara tu solicitud de asesoramiento técnico."><link rel="canonical" href="https://certi-sol.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CertiSol">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="CertiSol · Certificados sin complicaciones">
+<meta property="og:description" content="Certificado de eficiencia energética en Madrid con presupuesto online y gestión acompañada.">
+<meta property="og:url" content="https://certi-sol.com/">
+<meta property="og:image" content="https://certi-sol.com/favicon.svg">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://certi-sol.com/#business",
+      "name": "CertiSol",
+      "url": "https://certi-sol.com/",
+      "description": "Certificados de eficiencia energética y asesoramiento técnico en Madrid. Presupuesto orientativo online y gestión acompañada.",
+      "telephone": "+34660756552",
+      "image": "https://certi-sol.com/favicon.svg",
+      "priceRange": "€€",
+      "areaServed": { "@type": "AdministrativeArea", "name": "Comunidad de Madrid" },
+      "address": { "@type": "PostalAddress", "addressRegion": "Comunidad de Madrid", "addressCountry": "ES" },
+      "contactPoint": { "@type": "ContactPoint", "contactType": "customer service", "telephone": "+34660756552", "availableLanguage": "es" },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Certificados",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Certificado de eficiencia energética" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Asesoramiento técnico y otros certificados" } }
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://certi-sol.com/#faq",
+      "mainEntity": [
+        { "@type": "Question", "name": "¿El precio de la calculadora es definitivo?", "acceptedAnswer": { "@type": "Answer", "text": "No. Es una estimación según el tipo de inmueble, superficie y código postal. El equipo confirmará el alcance del trabajo, las tasas aplicables y el importe definitivo antes de formalizar el encargo." } },
+        { "@type": "Question", "name": "¿Qué datos necesito para solicitarlo?", "acceptedAnswer": { "@type": "Answer", "text": "El tipo de inmueble, su superficie aproximada, la ubicación y el trámite que necesitas. El equipo te indicará qué documentación adicional debes aportar." } },
+        { "@type": "Question", "name": "¿Cuánto tarda la entrega?", "acceptedAnswer": { "@type": "Answer", "text": "El plazo se acuerda al confirmar el presupuesto. Si necesitas prioridad, indícalo en tu solicitud para comprobar la disponibilidad." } },
+        { "@type": "Question", "name": "¿Puedo pedir otro certificado de ingeniería?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Describe el servicio en el formulario para que el equipo pueda valorar tu caso y preparar un presupuesto a medida." } }
+      ]
+    }
+  ]
+}
+</script>
+<link rel="icon" href="favicon.svg">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#163b36">
+<link rel="stylesheet" href="style.css"><script src="config.js" defer></script><script src="pricing.js" defer></script><script src="app.js" defer></script></head>
 <body><header class="header"><a class="brand" href="#" aria-label="Inicio"><span class="brand-icon">c<span>s</span></span><span data-brand>CertiSol</span></a><nav aria-label="Principal"><a href="#servicios">Servicios</a><a href="#proceso">Cómo funciona</a><a href="#preguntas">Preguntas frecuentes</a></nav><a class="button small" href="#calculadora">Calcula tu precio <span aria-hidden="true">↗</span></a></header>
 <main><section class="hero"><div class="hero-copy"><p class="eyebrow"><span class="line"></span> INGENIERÍA A TU SERVICIO</p><h1>Tu certificado.<br>Un proceso<br><em>más sencillo.</em></h1><p class="lead">De la primera consulta al documento final. Cuéntanos qué necesitas y da el primer paso con un presupuesto orientativo.</p><div class="hero-links"><a href="#calculadora">Calcula tu presupuesto <span aria-hidden="true">↗</span></a><a href="#proceso" class="subtle">Así funciona</a></div><div class="benefits"><span>01 / Atención directa</span><span>02 / Gestión acompañada</span><span>03 / Sin complicaciones</span></div></div>
 <div class="calculator" id="calculadora"><div class="calc-heading"><span class="tag">PRESUPUESTO ONLINE</span><span class="calc-number">01 — 03</span></div><h2>¿Cuánto cuesta<br>tu certificado?</h2><p class="muted">Certificado de eficiencia energética</p><form id="calculator-form"><fieldset><legend>01. Tipo de inmueble</legend><div class="property-options"><label><input type="radio" name="property" value="piso" checked><span>▤<strong>Piso</strong></span></label><label><input type="radio" name="property" value="chalet"><span>⌂<strong>Chalet</strong></span></label><label><input type="radio" name="property" value="local"><span>▥<strong>Local</strong></span></label></div><label class="more-types">Más tipos de inmueble<select id="more-property"><option value="">Piso, chalet o local</option><option value="oficina">Oficina</option><option value="edificio">Edificio completo</option></select></label></fieldset><div class="input-row"><label>02. Superficie<div class="unit-input"><input id="area" type="number" min="1" max="100000" step="1" value="80" required><span>m²</span></div></label><label>03. Código postal<input id="postcode" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" value="28001" placeholder="Ej. 28001" required aria-describedby="coverage-note"></label></div><p id="coverage-note" class="fine">La disponibilidad se confirma según la ubicación.</p><label class="express"><input id="express" type="checkbox"><span><strong>Necesito tramitación prioritaria</strong><small>Sujeta a disponibilidad del equipo</small></span><b id="express-cost"></b></label><div class="price-box"><div><span>Tu estimación</span><strong id="price" aria-live="polite"></strong><small id="price-detail">IVA incluido · Precio orientativo</small></div><span class="price-mark" aria-hidden="true">↗</span></div><p class="example-note" id="example-note">Tarifas de referencia para Madrid. Importe sujeto a confirmación.</p><button class="button full" type="submit">Continuar con mi solicitud <span aria-hidden="true">→</span></button><p class="fine center">Sin pago online. Presupuesto final tras revisar tu caso.</p></form></div></section>
@@ -8,4 +58,4 @@
 <section id="proceso" class="process section"><div class="section-heading"><div><p class="eyebrow">UN PROCESO CLARO</p><h2>De tu solicitud<br>a tu certificado.</h2></div><p>Conoce cada paso antes de empezar.</p></div><div class="steps"><article><span>01</span><h3>Cuéntanos tu caso</h3><p>Calcula una estimación e indica el inmueble y el trámite que necesitas.</p></article><article><span>02</span><h3>Confirma el presupuesto</h3><p>El equipo revisa el alcance, la ubicación y el plazo antes de confirmar el encargo.</p></article><article><span>03</span><h3>Coordinamos la visita</h3><p>Si el servicio la requiere, acordamos contigo la toma de datos del inmueble.</p></article><article><span>04</span><h3>Recibe la documentación</h3><p>Te entregamos el certificado y aclaramos las dudas sobre los siguientes pasos.</p></article></div></section>
 <section id="solicitud" class="section request"><div><p class="eyebrow">HABLEMOS DE TU PROYECTO</p><h2>El siguiente paso<br>empieza aquí.</h2><p class="lead">Prepara tu solicitud y habla directamente con nuestro equipo por WhatsApp.</p><div class="request-summary" id="request-summary"></div><p id="contact-notice" class="fine">Atención por WhatsApp: +34 660 756 552. Al continuar, se abrirá un mensaje con tus datos y tu presupuesto. Tú decides cuándo enviarlo.</p></div><form id="request-form" class="request-form"><div class="input-row"><label>Nombre<input name="name" autocomplete="name" required placeholder="Tu nombre"></label><label>Teléfono<input name="phone" type="tel" autocomplete="tel" placeholder="Tu teléfono"></label></div><label>Correo electrónico<input name="email" type="email" autocomplete="email" required placeholder="nombre@ejemplo.com"></label><label>¿Qué necesitas?<textarea name="message" rows="4" required placeholder="Cuéntanos el tipo de certificado, la ubicación y cualquier detalle que debamos conocer."></textarea></label><button class="button full" id="request-button" type="submit">Continuar en WhatsApp <span aria-hidden="true">↗</span></button><p role="status" id="request-status" class="fine"></p></form></section>
 <section id="preguntas" class="section faq"><div><p class="eyebrow">RESOLVEMOS TUS DUDAS</p><h2>Antes de empezar.</h2></div><div><details open><summary>¿El precio de la calculadora es definitivo?</summary><p>No. Es una estimación según el tipo de inmueble, superficie y código postal. El equipo confirmará el alcance del trabajo, las tasas aplicables y el importe definitivo antes de formalizar el encargo.</p></details><details><summary>¿Qué datos necesito para solicitarlo?</summary><p>El tipo de inmueble, su superficie aproximada, la ubicación y el trámite que necesitas. El equipo te indicará qué documentación adicional debes aportar.</p></details><details><summary>¿Cuánto tarda la entrega?</summary><p>El plazo se acuerda al confirmar el presupuesto. Si necesitas prioridad, indícalo en tu solicitud para comprobar la disponibilidad.</p></details><details><summary>¿Puedo pedir otro certificado de ingeniería?</summary><p>Sí. Describe el servicio en el formulario para que el equipo pueda valorar tu caso y preparar un presupuesto a medida.</p></details></div></section></main>
-<footer><a class="brand" href="#"><span class="brand-icon">c<span>s</span></span><span data-brand>CertiSol</span></a><p>Certificados de ingeniería. Atención de principio a fin.</p><span><a href="tel:+34660756552">+34 660 756 552</a> · © <span id="year"></span> · <span data-brand>CertiSol</span></span></footer></body></html>
+<footer><a class="brand" href="#"><span class="brand-icon">c<span>s</span></span><span data-brand>CertiSol</span></a><p>Certificados de ingeniería. Atención de principio a fin.</p><span><a href="tel:+34660756552">+34 660 756 552</a> · © <span id="year"></span> · <span data-brand>CertiSol</span> · <a href="aviso-legal.html">Aviso legal</a> · <a href="privacidad.html">Privacidad</a> · <a href="cookies.html">Cookies</a></span></footer></body></html>
